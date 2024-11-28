@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="Digite um número" id="num1">
+        <select id="formula">
+            <option hidden selected>Tipo de Operação</option>
+            <option value="somar">Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <input type="number" id="num2" placeholder="Digite outro número">
+        <p>Resultado: <span id="resultado"></span></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var num1 = document.getElementById("num1")
+            var num2 = document.getElementById("num2")
+            var formula = document.getElementById("formula")
+            var resultado = document.getElementById("resultado")
+            var input = document.querySelectorAll("input")
+
+            console.log(input)
+
+            formula.addEventListener("change", function(){
+                alert(formula.value)
+            })
+
+            function somar(){
+                num1.addEventListener("keyup", function(){
+                    resultado.innerHTML = num1.value
+                })
+            }
+        })
+    </script>
+</body>
+</html>
