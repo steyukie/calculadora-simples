@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+background-color: rgb(32, 32, 32);
+width: 100%;
+height: 100vh;
+align-items: center;
+display: flex;
+margin: auto;
+justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 250px;
+    background: rgb(231,147,173);
+    background: linear-gradient(0deg, rgba(231,147,173,1) 0%, rgba(64,60,235,1) 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: azure;
+}
+.equation {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#formula {
+    background-color: #e793ad;
+    border: none
+}
